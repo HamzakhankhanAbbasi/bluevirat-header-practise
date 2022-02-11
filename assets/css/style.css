@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Work+Sans:wght@400;500;600;700&display=swap');
+@font-face {
+  font-family: panton;
+  src: url('../fonts/FontsFree-Net-Panton-BlackCaps.ttf');
+}
+h1, h2, h3, h4, h5, h6, p, span, ul, li, a, .btn-default, textarea {
+	margin: 0;
+	padding: 0;
+}
+.fontts{
+  font-family: 'Secular One', sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a,
+a:hover {
+	text-decoration: none !important;
+  color: inherit;
+}
+a:focus {
+	text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Work Sans', sans-serif;
+}
+.container{
+	max-width: 1170px;
+}
+
+/*HEADER STARTS HERE*/
+.stellar-head-text{
+  margin-left: 20px;
+  font-size:18px !important;
+  color:#333333 !important;
+  font-weight:600 !important;
+}
+.rightSide .form-select {
+  padding: 0 40px 0px 10px;
+  background-color: transparent;
+}
+.cart-icon{
+  position:relative;
+}
+.custom-nav ul li a:hover {
+  color: #6699cc;
+}
+.select-wrap{
+  display:flex;
+}
+.flag-image img {
+  max-width: 18px;
+  max-height: 18px;
+}
+.cart-icon span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #6699cc;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  top: -11px;
+  right: -11px;
+}
+.top-barwrap {
+  padding: 20px 0;
+  background: #f5f5f5;
+}
+/* searchbar-start */
+.header-top{
+  padding:10px 0;
+  text-align: center;
+  background: radial-gradient(circle, rgba(204,204,204,1) 26%, rgba(153,153,153,1) 93%);
+}
+.store-text-main{
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+}
+.store-text{
+    color: #333333;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 400;
+}
+.heading {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+.searchInputWrapper {
+  position: relative;
+}
+.searchInput {
+  width: 320px;
+  height: 50px;
+  padding: 0 60px 0 40px;
+  border-radius: 2rem;
+  border: none;
+  transition: transform 0.1s ease-in-out;
+}
+::placeholder {
+  color: #a1a1a1;
+}
+:focus::placeholder {
+  text-indent: -999px
+}
+.searchInput:focus {
+  outline: none;
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+}
+.searchInputIcon {
+  position: absolute;
+  right: 0.8rem;
+  top: 16px;
+  color: #a1a1a1;
+  transition: all 0.1s ease-in-out;
+}
+.container:focus-within > 
+.searchInputWrapper > .searchInputIcon {
+  right: 0.2rem;
+}
+/* search-bar-end */
+header{
+  position: relative;
+  z-index: 3;
+}
+.arrow-icon {
+  margin-left: 10px !important;
+}
+/*RESPONSIVE NAVIGATION STARTS*/
+.navigation-wrap{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.custom-nav.desktop{
+  width: 100%;
+}
+.custom-nav ul > li > a {
+  padding: 10px;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 600;
+  position: relative;
+  transition: none !important;
+}
+.stellar-inner-text{
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+}
+.navigation-wrap  .stellarnav li {
+  padding: 0px 15px;
+}
+.custom-nav ul > li > a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.topBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topBar .logo-box{
+  margin-right: 25px;
+}
+.topBar .dropdown{
+  position: relative;
+}
+.borderTopBottom{
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+}
+.topBar select{
+  outline: none !important;
+  box-shadow: none !important;
+  border: none;
+  color: #282828;
+  font-size: 14px;
+  font-weight: 600;
+}
+.menu{
+  position: absolute;
+  font-size: 14px;
+  font-weight: 600;
+  width: 150px;
+  height: 130px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.menu li{
+  margin-right: 0 !important;
+  padding: 5px 0;
+}
+.menu li a{
+  padding-left: 0;
+  transition: all 0.7s ease-in-out;
+}
+.menu li a:hover{
+  color: #000;
+  padding-left: 10px;
+  transition: all 0.7s ease-in-out;
+}
+.center li a {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #282828;
+    position: relative;
+}
+.center li a::before{
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 3px;
+  bottom: -15%;
+  left: 2%;
+  background: rgb(251,179,44);
+  background: linear-gradient(180deg, rgba(251,179,44,1) 0%, rgba(245,110,71,1) 59%);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.center li a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.center,
+.rightSide{
+  display: flex;
+  align-items: center;
+}
+.center li,
+.rightSide li{
+  margin-right: 30px;
+}
+.login-btn {
+  padding: 15px 35px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.login-btn img{
+  margin-right: 10px;
+}
+.nav-dropdown {
+  width: 100%;
+  max-width: 100% !important;
+  top: auto;
+  /*box-shadow: 0 5px 5px 0 #ccc;*/
+}
+.stellar-one .stellarnav ul ul {
+  background: #fff;
+}
+.stellar-one .stellarnav.desktop > ul > li.mega > ul {
+  width: calc(100% - 50px);
+  padding: 40px 30px;
+}
+.navigation-main li ul{
+  display:flex;
+}
+.stellarnav.desktop > ul > li.mega > ul > li > a {
+  color: #333333;
+}
+/*RESPONSIVE NAVIGATION ENDS*/
+/*HEADER ENDS HERE*/
+/* index-sec1-start */
+.index-banner{
+  background:url('../images/blu-banner.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 480px;
+  max-height: 480px;
+}
+.banner-content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 480px;
+}
+.banner-text2{
+  color:#ffcc00;
+  font-size:50px;
+  font-weight:600;
+  text-transform:uppercase;
+}
+.banner-text3{
+  color:#ffffff;
+  font-size:14px;
+  font-weight:400;
+}
+.banner-wrap{
+  position:relative;
+}
+.banner-image-wrap{
+  position:absolute;
+  top: 20%;
+}
+.banner-image {
+  max-width: 560px;
+  max-height: 260px;
+}
+.shop-btn {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 40px;
+  border-radius: 50px;
+  color: #333333;
+  background-color: #fff;
+  display: inline-block;
+  transition: all 0.4s ease-in-out;
+}
+/* index-sec1-end */
+
+
+
+
+
+
+
